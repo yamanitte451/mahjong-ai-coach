@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "dir-creator": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/root/claude-code-company/.vscode/mkdir-server.js"]
+    },
+    "git-ops": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/root/claude-code-company/.vscode/git-ops-server.js"]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# .claudeignore - Claude Code のコンテキストから除外するファイル
+# 形式は .gitignore と同じ
+# ---------------------------------------------------------------------------
+
+# Python キャッシュ（コンテキスト汚染を防ぐ）
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# テストキャッシュ・カバレッジ出力
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# Azure Functions ローカル実行キャッシュ
+.python_packages/
+.func/
+bin/
+obj/
+
+# 仮想環境
+.venv/
+venv/
+env/
+
+# ローカル設定（シークレットを含む可能性）
+local.settings.json
+
+# Bicep ARM テンプレート生成物（コードレビュー不要）
+# infra/ は IaC 担当の Infra エージェントが参照するが
+# 通常の Python 実装タスクではコンテキスト不要
+infra/**/*.json
+
+# Azure デプロイパッケージ
+*.zip
+*.tar.gz
+
+# IDE・OS メタデータ
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ログファイル
+*.log
+logs/

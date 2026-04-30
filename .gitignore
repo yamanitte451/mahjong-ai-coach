@@ -1,0 +1,18 @@
+local.settings.json
+.env
+.env.*
+.claude/settings.local.json
+__pycache__/
+*.pyc
+*.pyo
+.python_packages/
+.func/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+deploy.zip
+*.zip
+# Windows/WSL2 metadata
+*:Zone.Identifier

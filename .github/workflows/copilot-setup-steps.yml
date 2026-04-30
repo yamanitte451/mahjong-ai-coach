@@ -1,0 +1,31 @@
+name: Copilot Setup Steps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+      - kakeibo-app/package.json
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+      - kakeibo-app/package.json
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Kakeibo dependencies
+        working-directory: kakeibo-app
+        run: npm install

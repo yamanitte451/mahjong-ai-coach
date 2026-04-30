@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# pre-push: push前に unit + integration を強制実行
+# セットアップ: git config core.hooksPath .githooks
+set -e
+echo "[pre-push] running tests..."
+pytest tests/unit tests/integration -x -q
+echo "[pre-push] OK"

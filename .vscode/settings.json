@@ -1,0 +1,12 @@
+{
+  // GitHub Copilot Chat エージェントモードのツール承認設定
+
+  // ファイル編集ツールの確認ダイアログをスキップ
+  "chat.tools.edits.autoApprove": true,
+
+  // ターミナルコマンドの確認ダイアログをスキップ
+  "chat.tools.terminal.autoApprove": true,
+
+  // エージェントの最大リクエスト数（デフォルト: 15）
+  "chat.agent.maxRequests": 30
+}
