@@ -41,14 +41,6 @@
 | infra | Infra | インフラ、デプロイ、IaC | `agents/development/infra/CLAUDE.md` |
 | qa | QA | テスト設計、品質保証、バグ検証 | `agents/development/qa/CLAUDE.md` |
 
-### 投資部門
-| ID | 役割 | 担当 | ロール定義 |
-|---|---|---|---|
-| cio | CIO | 地合い判定、フェーズ管理、投資判断統合 | `agents/investment/cio/CLAUDE.md` |
-| quant | Quant | スクリーニング、スコアリング、テクニカル分析 | `agents/investment/quant/CLAUDE.md` |
-| research | Research | 企業調査、IR収集、SNSモニタリング | `agents/investment/research/CLAUDE.md` |
-| risk | RiskManager | 損切り監視、ポートフォリオリスク評価 | `agents/investment/risk/CLAUDE.md` |
-
 ## 委譲ルール
 - 独立したタスクは並列委譲する
 - 依存関係があるタスクは順次委譲する
@@ -96,13 +88,6 @@
 - インフラ、デプロイ -> Infra
 - テスト戦略、品質、バグ -> QA
 - 開発全般 -> PM + Backend + Infra + QA
-
-### 投資部門
-- 地合い・フェーズ判定・最終投資判断 -> CIO
-- 銘柄スコアリング・テクニカル分析 -> Quant
-- 企業調査・IR・SNSモニタリング -> Research
-- 損切り・ポジション管理・リスク評価 -> RiskManager
-- 投資判断全般 -> CIO + Quant + Research + RiskManager（CIO が統合）
 
 ## コミュニケーションと所有権
 - `.claude/rules/agent-communication.md` を、Claude Code 以外でもチームの通信契約として使う

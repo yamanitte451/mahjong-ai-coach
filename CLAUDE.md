@@ -46,14 +46,6 @@
 | infra | Infra（インフラエンジニア） | インフラ設計・IaC・デプロイ | agents/development/infra/CLAUDE.md |
 | qa | QA（品質保証エンジニア） | テスト設計・品質保証 | agents/development/qa/CLAUDE.md |
 
-### 投資部門
-| ID | エージェント | 役割 | ロール定義 |
-|---|---|---|---|
-| cio | CIO（最高投資責任者） | 地合い判定・フェーズ管理・投資判断統合 | agents/investment/cio/CLAUDE.md |
-| quant | Quant（クオンツアナリスト） | スクリーニング・スコアリング・テクニカル分析 | agents/investment/quant/CLAUDE.md |
-| research | Research（リサーチャー） | 企業調査・IR収集・SNS監視 | agents/investment/research/CLAUDE.md |
-| risk | RiskManager（リスクマネージャー） | 損切り監視・ポートフォリオリスク評価 | agents/investment/risk/CLAUDE.md |
-
 ---
 
 ## チームメイトのスポーンルール
@@ -106,13 +98,6 @@
 - インフラ設計・デプロイ・IaC → Infra
 - テスト・品質・バグ → QA
 - 開発全般（複合） → PM + Backend + Infra + QA 並列
-
-### 投資部門へのルーティング
-- 地合い・フェーズ判定・最終投資判断 → CIO
-- 銘柄スコアリング・テクニカル分析 → Quant
-- 企業調査・IR・SNSモニタリング → Research
-- 損切り・ポジション管理・リスク評価 → RiskManager
-- 投資判断全般（複合） → CIO + Quant + Research + RiskManager 並列（CIO が統合）
 
 ---
 
